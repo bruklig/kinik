@@ -8,13 +8,13 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomePage,
+    component: () => import(/* webpackChunkName: "HomePage" */ '../pages/HomePage.vue'),
   },
-  {
-    path: '/items',
-    name: 'Items',
-    component: () => import(/* webpackChunkName: "ItemsPage" */ '../views/ItemsPage.vue'),
-  },
+  // {
+  //   path: '/items',
+  //   name: 'Items',
+  //   component: () => import(/* webpackChunkName: "ItemsPage" */ '../pages/ItemsPage.vue'),
+  // },
 ]
 
 const router = new VueRouter({
