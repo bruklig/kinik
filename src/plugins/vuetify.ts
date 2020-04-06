@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
-import { preset } from 'vue-cli-plugin-vuetify-preset-rally/preset'
+import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify)
 
@@ -13,8 +13,13 @@ Vue.use(Vuetify)
  * senary: '#72DEFF',
  */
 export default new Vuetify({
-  preset,
-  icons: {
-    iconfont: 'mdi',
+  theme: {
+    themes: {
+      light: {
+        primary: '#E53935', // #E53935
+        secondary: colors.red.lighten4, // #FFCDD2
+        accent: colors.indigo.base, // #3F51B5
+      },
+    },
   },
 })

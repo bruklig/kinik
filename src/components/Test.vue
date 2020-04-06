@@ -1,7 +1,5 @@
 <template lang="pug">
 section#test-intro
-  .home-page-message
-    h2 Бесплатный доступ ко всем урокам по программированию для детей на время каникул.
   #intro(style={height: '500px'})
     .container
       v-row.align-center.justify-center
@@ -12,23 +10,23 @@ section#test-intro
         .col
   #threeblocks
     .container
-      v-row.align-center.justify-center.aaa
+      v-row(justify="center").align-center.justify-center
         v-col.text-center
           h2 Kinik: Воодушевляем детей творить
           p с помощью компьютера и интернета
       v-row.align-center.justify-center
         v-col.text-center
-          img(src='../assets/img/bg/main-bg.jpg')/
+          img(src='../assets/img/bg/main-bg.jpg')
           h3 Один
           p Один Один Один Один Один Один Один Один Один Один Один Один Один Один 
           a.v-btn.outlined Один
         v-col.text-center
-          img(src='../assets/img/bg/main-bg.jpg')/
+          img(src='../assets/img/bg/main-bg.jpg')
           h3 Два
           p Два Два Два Два Два Два Два Два Два Два Два Два Два Два Два Два Два 
           a.v-btn.outlined Два
         v-col.text-center
-          img(src='../assets/img/bg/main-bg.jpg')/
+          img(src='../assets/img/bg/main-bg.jpg')
           h3 Три
           p Три Три Три Три Три Три Три Три Три Три Три Три Три Три Три Три Три 
           a.v-btn.outlined Три
